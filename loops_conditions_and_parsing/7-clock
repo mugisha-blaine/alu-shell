@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # script that displays the time for 12 hours and 59 minutes
-head -n 70
 hour=0
 while [ $hour -lt 12 ]
 do
@@ -12,4 +11,5 @@ do
               ((minute++ ))
        done
        ((hour++ ))
+       head -n 70
 done
