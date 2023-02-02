@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # script that displays the content of the file /etc/passwd, using the while loop + IFS.
-while IFS=: read -r READ
+OIFS=$IFS; IFS=:  
+while read -r READ
 do
       echo "$READ"
 done </etc/passwd
-echo "\$IFS still $IFS"
+IFS=$OIFS   
