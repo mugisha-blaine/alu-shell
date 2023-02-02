@@ -10,6 +10,5 @@ do
               echo "$minute"
               ((minute++ ))
        done
-       ((hour++ ))
-       head -n 70
+       ((hour++ )) 
 done
