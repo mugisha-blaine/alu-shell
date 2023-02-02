@@ -4,3 +4,4 @@ while IFS=: read -r READ
 do
       echo "$READ"
 done </etc/passwd
+echo "\$IFS still $IFS"

@@ -2,5 +2,5 @@
 # script that displays the content of the file /etc/passwd
 while read -r READ
 do
-       echo "${READ
+       echo "${READ}"
 done < /etc/passwd
