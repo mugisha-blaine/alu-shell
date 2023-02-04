@@ -5,4 +5,4 @@ while read -r READ
 do
       echo "$READ"
 done </etc/passwd
-IFS=$OIFS   
+  
