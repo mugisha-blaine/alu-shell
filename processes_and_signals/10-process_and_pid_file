@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #script that creates the file /var/run/myscript.pid containing its PID
 script="var/run/myscript.pid"
-echo $$ > "$file"
+echo $$ > "$script"
 trap 'echo "I hate the kill command"; rm "$script"; exit' SIGTERM SIGQUIT
 while true;
 do 
